@@ -1,0 +1,238 @@
+/* General Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+background: linear-gradient(
+135deg,
+#10172f,
+#20294b,
+#34365d
+);
+
+color: #f2efff;
+font-family: Georgia, serif;
+min-height: 100vh;
+line-height: 1.8;
+
+}
+
+/* Welcome Screen */
+
+.welcome {
+min-height: 100vh;
+
+display: flex;
+flex-direction: column;
+
+justify-content: center;
+align-items: center;
+
+text-align: center;
+padding: 30px;
+
+}
+
+h1 {
+font-size: 65px;
+margin: 20px 0;
+color: #e5d9ff;
+}
+
+.intro {
+font-size: 17px;
+color: #d0cce5;
+max-width: 450px;
+margin: 8px;
+}
+
+.small-text {
+color: #b8a9e8;
+font-size: 13px;
+letter-spacing: 3px;
+text-transform: uppercase;
+}
+
+/* Buttons */
+
+button {
+background: #b7a5df;
+color: #17172d;
+
+border: none;
+border-radius: 30px;
+
+padding: 13px 25px;
+margin: 20px 5px;
+
+font-size: 14px;
+cursor: pointer;
+
+transition: 0.3s;
+
+}
+
+button:hover {
+background: #e0d3ff;
+transform: translateY(-3px);
+}
+
+/* Main Content */
+
+main {
+max-width: 850px;
+margin: auto;
+padding: 30px 20px;
+}
+
+.hidden {
+display: none;
+}
+
+.card {
+background: rgba(255, 255, 255, 0.07);
+
+border: 1px solid rgba(255, 255, 255, 0.12);
+
+border-radius: 20px;
+
+padding: 40px;
+
+margin: 35px 0;
+
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+}
+
+h2 {
+color: #dfd2ff;
+font-size: 30px;
+margin: 15px 0 25px;
+}
+
+.card p {
+margin: 15px 0;
+color: #e0dcef;
+}
+
+/* Signature */
+
+.signature {
+color: #c6b2f5 !important;
+font-style: italic;
+margin-top: 25px !important;
+}
+
+/* Open When Buttons */
+
+.message-buttons {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 8px;
+}
+
+.message-buttons button {
+background: rgba(190, 174, 230, 0.2);
+color: white;
+border: 1px solid #8d7cb8;
+}
+
+.message-buttons button:hover {
+background: #a895d1;
+color: #17172d;
+}
+
+/* Message Box */
+
+.message-box {
+background: rgba(0, 0, 0, 0.15);
+
+border-radius: 15px;
+
+padding: 25px;
+
+margin-top: 25px;
+
+text-align: center;
+
+color: #e5dcff;
+font-style: italic;
+
+min-height: 90px;
+
+}
+
+/* Reminders */
+
+.reminders p {
+border-bottom: 1px solid rgba(255,255,255,0.12);
+padding: 12px;
+}
+
+/* Random Message */
+
+.random-section {
+text-align: center;
+}
+
+#random-message {
+font-size: 19px;
+color: #e4d6ff;
+font-style: italic;
+}
+
+/* Footer */
+
+footer {
+text-align: center;
+padding: 50px 20px;
+color: #d5cce9;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+
+h1 {
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+.card {
+    padding: 25px 20px;
+}
+
+.intro {
+    font-size: 15px;
+}
+
+}
+
+/* Stars */
+
+.stars {
+position: fixed;
+inset: 0;
+
+pointer-events: none;
+
+background-image:
+    radial-gradient(2px 2px at 20% 30%, white, transparent),
+    radial-gradient(2px 2px at 70% 60%, white, transparent),
+    radial-gradient(1px 1px at 40% 80%, white, transparent),
+    radial-gradient(2px 2px at 85% 20%, white, transparent);
+
+background-size: 250px 250px;
+
+opacity: 0.4;
+z-index: -1;
+
+}

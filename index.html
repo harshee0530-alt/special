@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>A Little Space for You</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head><body><!-- Background Stars -->
+<div class="stars"></div>
+
+<!-- Welcome Section -->
+<section id="home" class="welcome">
+
+    <p class="small-text">For My Cutu Puppy </p>
+
+    <h1>Ayeee Chiku Shake...</h1>
+
+    <p class="intro">
+        I don't know what kind of day you're having,
+        but I'm glad you're here.
+    </p>
+
+    <p class="intro">
+        Come in. You don't have to be anything here.
+    </p>
+
+    <button onclick="enterSite()">Enter your little space →</button>
+
+</section>
+
+
+<!-- Main Website -->
+<main id="main-content" class="hidden">
+
+    <!-- Letter Section -->
+    <section class="card">
+
+        <p class="small-text">A little something for you</p>
+
+        <h2>Before anything else...</h2>
+
+        <p>
+            I don't know if you realise this, but you're more
+            than the things that have happened to you.
+        </p>
+
+        <p>
+            You're more than the people you've lost,
+            the moments you wish had gone differently,
+            and the things you sometimes wish you could change.
+        </p>
+
+        <p>
+            You don't have to have everything figured out.
+            You don't have to be okay every single day.
+        </p>
+
+        <p>
+            Just remember that your existence matters,
+            even on the days when you struggle to see it yourself.
+        </p>
+
+        <p>
+            And I hope life gives you plenty of reasons
+            to smile again.
+        </p>
+
+        <p class="signature">Take care of yourself. ♡</p>
+
+    </section>
+
+
+    <!-- Open When Section -->
+    <section class="card">
+
+        <p class="small-text">For different kinds of days</p>
+
+        <h2>Open when...</h2>
+
+        <div class="message-buttons">
+
+            <button onclick="showMessage(0)">
+                You're feeling low
+            </button>
+
+            <button onclick="showMessage(1)">
+                You miss someone
+            </button>
+
+            <button onclick="showMessage(2)">
+                You feel lonely
+            </button>
+
+            <button onclick="showMessage(3)">
+                You doubt yourself
+            </button>
+
+            <button onclick="showMessage(4)">
+                You can't sleep
+            </button>
+
+            <button onclick="showMessage(5)">
+                You're having a good day
+            </button>
+
+        </div>
+
+        <div id="message-box" class="message-box">
+            Choose a little note above. ♡
+        </div>
+
+    </section>
+
+
+    <!-- Little Reminders -->
+    <section class="card">
+
+        <p class="small-text">Things worth remembering</p>
+
+        <h2>Little reminders</h2>
+
+        <div class="reminders">
+
+            <p>01. You are allowed to begin again.</p>
+
+            <p>02. You don't have to earn the right to be happy.</p>
+
+            <p>03. Not everyone who leaves takes something away from you.</p>
+
+            <p>04. Growing takes time. Be patient with yourself.</p>
+
+            <p>05. You matter, even when nobody says it.</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Random Message -->
+    <section class="card random-section">
+
+        <p class="small-text">A little surprise</p>
+
+        <h2>Need a random reminder?</h2>
+
+        <p id="random-message">
+            There's a little something waiting for you.
+        </p>
+
+        <button onclick="randomMessage()">
+            Give me a reminder ✨
+        </button>
+
+    </section>
+
+
+    <!-- Ending -->
+    <footer>
+
+        <h2>And one last thing...</h2>
+
+        <p>
+            I hope you never forget that you deserve
+            beautiful things, beautiful moments
+            and a life that feels like your own.
+        </p>
+
+        <p class="signature">
+            This little space is always yours. ♡
+        </p>
+
+    </footer>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
